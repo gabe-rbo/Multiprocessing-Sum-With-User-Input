@@ -37,7 +37,7 @@ For a fact, since we are opening a script, we can take advantage of cmd's functi
 
     processo = Popen(["python", "-c", "import sys; from testesoma import soma; x = soma(); print('soma(): ' + str(x));"], stdin=PIPE, stdout=PIPE, stderr=PIPE, encoding='utf-8', text=True)
 
-In this case, we call python in the cmd (-c) and import sys. Then, from the original file script, i import the function i wanted, assigned a variable to it and called it using print. This makes me be able to catch the functions output whitout altering the inteded script - also, it allows me to know where the return will be (in this case, i used the string "soma():" to identify it), which is quite useful, since i need this to correct student code. 
+In this case, we call python in the cmd (-c) and import sys. Then, from the original file script, i import the function i wanted, assigned a variable to it and called it using print. This makes me be able to catch the functions output whitout altering the inteded script - also, it allows me to know where the return will be (in this case, i used the string "soma():" to identify it), which is quite useful, since i need this to correct student code. NOTE: for this to work, you must be working in the same directory as your scripts
 
 #### '__main__'
     if __name__ == '__main__':
