@@ -60,3 +60,6 @@ Then, to show the functionality of the previous added string for the result, i c
       saida_soma = r[string_r:]  # sum output
     
       print(f'{saida_soma}')
+
+#### Notes about testesoma.py:
+The commented parts are only to show what was necessary with the past process construction. I only kept it in case anyone wants to see.
