@@ -6,7 +6,8 @@ def tentativa(n1: float, n2: float) -> tuple:
 
     # processo = Popen([r'python.exe', r'-u', r'testesoma.py'], stdin=PIPE, stdout=PIPE, stderr=PIPE, encoding='utf-8')  -> é o que tínhamos antes
     processo = Popen(["python", "-c", "import sys; from testesoma import soma; x = soma(); print('soma(): ' + str(x));"], stdin=PIPE, stdout=PIPE, stderr=PIPE, encoding='utf-8', text=True)
-
+    # I got this from this StackOverflow question: https://stackoverflow.com/questions/10768584/execute-python-commands-passed-as-strings-in-command-line-using-python-c#comment14052551_10768682
+    
     processo.stdin.write(str(n1) + '\n')
     processo.stdin.flush()
 
